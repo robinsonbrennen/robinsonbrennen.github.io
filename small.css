@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@500&family=Press+Start+2P&display=swap');
-
+/*font-family: 'Arvo', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Cabin|Lato&display=swap');
 body {
     margin: auto;
     width: 80%;
     max-width: 750px;
 }
 
-
 h1 {
-    background-color: darkslategrey;
-    color: papayawhip;
+    background-color: #595E66;
+    color: #94DDBC;
     padding: 30px 0px 30px 100px;
-    font-family: 'Iceland', cursive;
+    font-family: 'Cabin', 'Lato';
     border-radius: 10px;
     font-size: 40px;
-    text-shadow: 1px 1px turquoise;
 }
 
 h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Cabin', 'Lato';
     font-size: 12px;
     margin-top: -80px;
     margin-left: 30px;
@@ -29,13 +29,13 @@ h2 {
 }
 
 ul li {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Cabin', sans-serif;
     margin-left: 30px;
     list-style: circle;
 }
 
 a:link {
-    color: rgb(177, 97, 0);
+    color: rgb(44, 153, 204);
     text-decoration: none;
 }
 
@@ -44,15 +44,15 @@ main a:visited {
 }
 
 main a:hover {
-    background-color: teal;
-    color: papayawhip;
+    background-color: rgb(13, 117, 100);
+    color: #94DDBC;
     padding: 1px;
     border-radius: 2px 2px 2px 2px;
   }
 
 footer {
-    background-color: darkslategrey;
-    color: papayawhip;
+    background-color: #595E66;
+    color: #94DDBC;
     text-align: center;
     padding: 10px 0 10px 0;
     border-radius: 10px;
@@ -65,8 +65,4 @@ footer a:visited {
 
 footer a:hover {
     color: darkorange;
-}
-
-#updated {
-    color: chartreuse;
 }
