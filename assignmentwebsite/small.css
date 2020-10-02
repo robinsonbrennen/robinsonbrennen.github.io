@@ -15,7 +15,7 @@ body {
 .home-grid {
     display: grid;
     grid-template-columns: 2em 1em 2em;
-    grid-gap: 1em
+    grid-gap: 1em;
     padding: 1em;
 }
 h1 {
