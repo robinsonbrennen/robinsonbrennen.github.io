@@ -11,6 +11,7 @@ body {
     margin: auto;
     width: 80%;
     max-width: 750px;
+    display: grid;
 }
 .home-grid {
     display: grid;
@@ -27,17 +28,6 @@ h1 {
     font-size: 40px;
 }
 
-h2 {
-    font-family: 'Arvo', 'sans-serif';
-    font-size: 12px;
-    margin-top: -80px;
-    margin-left: 30px;
-    margin-right: 50px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    
-}
-
 ul li {
     font-family: 'Arvo', sans-serif;
     margin-left: 30px;
@@ -49,18 +39,14 @@ a:link {
     text-decoration: none;
 }
 
-main a:visited {
-    color: olive;
-}
-
 main a:hover {
     background-color: #b4a6ab;
     color: #94DDBC;
     padding: 1px;
     border-radius: 2px 2px 2px 2px;
-  }
+}
 
-footer {
+.home-footer {
     background-color: #595E66;
     color: #9fc490;
     text-align: center;
