@@ -1,7 +1,7 @@
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 37.5em) {
     main {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1fr 1fr);
         row-gap: 30px;
     }
     main section:nth-child(2) {
