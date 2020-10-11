@@ -1,29 +1,28 @@
 @media only screen and (min-width: 32.5em) {
    
    .logo {
-      width: 100%;
-   }
-
-   body {
-      max-width: 50rem;
+      width: 15rem;
    }
 
    .navigation {
 		display: flex;
+      align-content: center;
+      font-size: 120%;
    }
    
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 auto;
-   }
-   
-	.navigation a {
-		text-align: center;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
    }
    
 	.navigation li:first-child {
 		display: none;
    }
    
-
+   .contentbox {
+      padding: 20px;
+      max-width: 85%;
+   }
 }

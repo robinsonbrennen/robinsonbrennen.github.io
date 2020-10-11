@@ -21,19 +21,22 @@ body {
    margin: auto;
    max-width: 100%;
    font-family: 'Amaranth', sans-serif;
-   display: flex;
 }
 
 header {
-   background-color: white;
+   background-color: transparent;
    padding: 5px 0;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
+.moto {
+   font-weight: bold;
+}
+
 .logo {
-   width: 80px;
+   width: 150px;
    height: auto;
 }
 
@@ -42,37 +45,71 @@ header {
    flex-direction: column;
 }
 
+main {
+   display: block;
+   padding: 20px;
+}
 
+h2 {
+   font-size: 1.9rem;
+}
+
+.contentbox {
+   display: block;
+   margin: 10px auto;
+   border: 1px solid;
+   padding: 15px;
+   background-color: #eee;
+}
+
+ul {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+}
 
 nav {
 	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
 }
+
 .navigation {
 	list-style: none;
+   text-align: center;
    padding: 0;
-   display: flex;
+   background-color: #26B7FF;
 }
+
 .navigation li:first-child {
 	display: block;
 }
+
 .navigation li {
    display: none;
 }
+
 .navigation a {
 	display: block;
-	padding: 0.75rem;
-	text-align: left;
+	padding: .5rem;
+	text-align: center;
 	text-decoration: none;
 	color: black;
 	font-weight: 700;
 }
+
 .navigation a:hover {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(91, 213, 243);
 }
 
 .responsive li {
 	display: block;
+}
+
+footer {
+   background-color: #26B7FF;
+   padding: 10px;
+
 }
