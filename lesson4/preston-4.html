@@ -21,24 +21,27 @@
       <div class="logo-box">
          <img class="logo" src="/lesson4/images/simplyweathericon.png" alt="Simply Weather Logo">
       </div>
-      <h1>Simply Weather</h1>
-      <div class="moto">
-         <p>Your weather without the fluff</p>
-      </div>
+      <section class="headings">
+         <h1>Simply Weather</h1>
+         <div class="moto">
+            <p>Your weather without the fluff</p>
+         </div>
+      </section>
    </header>
-    <nav class="navbar">
-        <ul>
+      <nav>
+         <ul class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
             <li>
-                <a href="Home">Home</a>
+               <a href="Home">Home</a>
             </li>
             <li>
-                <a href="Preston">Preston</a>
+               <a href="Preston">Preston</a>
             </li>
             <li>
-                <a href="Soda Springs">Soda Springs</a>
+               <a href="Soda Springs">Soda Springs</a>
             </li>
             <li>
-                <a href="Fish Haven">Fish Haven</a>
+               <a href="Fish Haven">Fish Haven</a>
             </li>
             <li>
                <a href="Storm Center">Storm Center</a>
@@ -48,12 +51,22 @@
             </li>
         </ul>
     </nav>
-    <main>
-         <h2>Preston Idaho</h2>
-         <div class="contentbox">Hero w/ weather summary</div>
-         <div class="contentbox forecast">5 Day Forecast</div>
-         <div class="contentbox">Article</div>
-         <div class="contentbox">Contact Information</div>
-    </main>
-    <footer></footer>
+   <main>
+      <h2>Preston Idaho</h2>
+      <div class="contentbox">Hero w/ weather summary</div>
+      <div class="contentbox forecast">5 Day Forecast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Contact Information</div>
+   </main>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming | 
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+         Last Updated: 
+         <span id="currentDate"></span>
+         <script src="/lesson4/js/date.js"></script>
+         <script src="/lesson4/js/responsiveMenu.js"></script>
+      </div>
+   </footer>
 </body>
