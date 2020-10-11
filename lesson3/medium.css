@@ -1,0 +1,6 @@
+/* Medium Size */
+@media only screen and (min-width: 37.5em) {
+   body {
+      padding: 20px;
+   }
+}
