@@ -23,6 +23,8 @@ body {
    font-family: 'Amaranth', sans-serif;
 }
 
+/*Header*/
+
 header {
    background-color: transparent;
    padding: 5px 0;
@@ -45,34 +47,7 @@ header {
    flex-direction: column;
 }
 
-main {
-   display: block;
-   padding: 20px;
-}
-
-h2 {
-   font-size: 1.9rem;
-}
-
-.contentbox {
-   display: block;
-   margin: 10px auto;
-   border: 1px solid;
-   padding: 15px;
-   background-color: #eee;
-}
-
-/*
-ul {
-   display: block;
-   margin-block-start: 1em;
-   margin-block-end: 1em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
-   padding-inline-start: 40px;
-   text-decoration: none;
-}
-*/
+/*Navigation*/
 
 nav {
    margin: 0 auto;
@@ -84,18 +59,18 @@ nav,
 ul,
 li,
 a {
-  display: block;
-  color: #051E2B;
-  text-decoration: none;
+   display: block;
+   color: #051E2B;
+   text-decoration: none;
 }
 
 .navigation {
-	list-style: none;
+   list-style: none;
    padding: 0;
 }
 
 .navigation li:first-child {
-	display: block;
+   display: block;
 }
 
 .navigation li {
@@ -103,23 +78,173 @@ a {
 }
 
 .navigation a {
-	display: block;
-	padding: .5rem;
+   display: block;
+   padding: .5rem;
    color: black;
    text-decoration: none;
-	font-weight: 700;
+   font-weight: 700;
 }
 
 .navigation a:hover {
-	color: black;
-	background-color: rgb(91, 213, 243);
+   color: black;
+   background-color: rgb(91, 213, 243);
 }
 
 .responsive li {
-	display: block;
+   display: block;
 }
+
+/*Main*/
+
+main {
+   display: block;
+   padding: 20px;
+}
+
+/*Footer*/
 
 footer {
    background-color: #26B7FF;
    padding: 10px;
+}
+
+/*Hero Image*/
+
+.heroimg {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   position: relative;
+}
+
+/*Weather Summary*/
+
+.weathersummary {
+   display: flex;
+   justify-content: space-between;
+   background-color: #eee;
+   padding: 1em 1em;
+}
+
+.weatherboxvalue {
+   text-align: left;
+}
+
+/*5 Day Forecast*/
+
+.fivedayforecastbox {
+   max-width: auto;
+   margin: auto;
+   padding-bottom: 2em;
+}
+
+.fivedayforecast {
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(80, 80, 80);
+   padding: 1rem .5rem;
+}
+
+.fivedayforecast div {
+   border: #f6d0b1 solid 2px;
+   padding: 0 4%;
+}
+
+.fivedayforecast div h3 {
+   font-size: 16px;
+   color: white;
+   text-align: center;
+}
+
+.fivedayforecast div img {
+   margin-left: 0;
+   margin-right: 0;
+   padding-bottom: .5rem;
+}
+
+.fivedayforecast div p {
+   font-size: 16px;
+   color: white;
+   text-align: center;
+}
+
+/*Article*/
+
+.articlediv {
+   display: flex;
+   justify-content: space-between;
+   background-color: #eee;
+   padding: 1em 1em;
+   float: left;
+   flex-flow: column nowrap;
+   margin: auto;
+}
+
+.articlediv p {
+   text-indent: 30px;
+}
+
+.floatimg {
+   display: none;
+}
+
+.blockimg {
+   max-width: 100%;
+   margin: auto;
+   padding-top: 2em;
+}
+
+/*Contact*/
+
+.contactdiv {
+   display: ;
+   justify-content: space-between;
+   background-color: #eee;
+   padding: 1em 1em;
+   margin: auto;
+}
+
+.contactinfo {
+   display: flex;
+   margin: auto;
+   padding-bottom: 1em;
+}
+
+.contactinfo img {
+   width: 36px;
+   padding-right: 1em;
+}
+
+.cantactinfo div h3 {
+   font-size: 16px;
+   color: white;
+   text-align: left;
+}
+
+.contactinfo div img {
+   margin-left: 0;
+   margin-right: 0;
+   padding-bottom: .5rem;
+}
+
+.contactinfo div p {
+   font-size: 16px;
+   color: white;
+   text-align: right;
+}
+
+.mapsmall {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   position: relative;
+   border: black solid 5px;
+}
+
+.mapprestonlarge {
+   display: none;
+}
+
+.contactlarge {
+   display: none;
 }
