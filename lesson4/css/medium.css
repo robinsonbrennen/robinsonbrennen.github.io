@@ -13,8 +13,7 @@
 	.navigation li {
 		display: block;
 		flex: 1 1 auto;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
+      line-height: 70px;
    }
    
 	.navigation li:first-child {
