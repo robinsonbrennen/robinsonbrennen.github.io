@@ -99,6 +99,9 @@ a {
 main {
    display: block;
    padding: 20px;
+   margin: auto;
+   margin-left: 2%;
+   margin-right: 2%;
 }
 
 /*Footer*/
@@ -178,6 +181,7 @@ footer {
    float: left;
    flex-flow: column nowrap;
    margin: auto;
+   padding-bottom: 2em;
 }
 
 .articlediv p {
