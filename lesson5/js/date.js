@@ -42,6 +42,17 @@ let fulldate = dayName + " " + d.getDate() + " " + monthName + " " + d.getFullYe
 
 document.getElementById("currentDate").innerHTML = fulldate;
 
+// if date == friday
+//    return pancake banner;
+console.log(dayName);
+if (dayName == "Friday") {
+    document.getElementById("pancakemessage").style.display = "block";
+}
+else {
+    document.getElementById("pancakemessage").style.display = "none";
+}
+
+
 //current date 2
 /*
 try {
