@@ -222,6 +222,7 @@ main {
    display: flex;
    margin: auto;
    padding-bottom: 1em;
+   white-space: nowrap;
 }
 
 .contactinfo img {
@@ -243,8 +244,12 @@ main {
 
 .contactinfo div p {
    font-size: 16px;
-   color: white;
+   color: black;
    text-align: right;
+}
+
+.contactbox h3 {
+   padding-left: 1em;
 }
 
 .mapsmall {
