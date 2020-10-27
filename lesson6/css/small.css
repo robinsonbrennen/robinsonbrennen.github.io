@@ -129,14 +129,11 @@ main {
 /*Weather Summary*/
 
 .weathersummary {
-   display: flex;
+   display: block;
    justify-content: space-between;
    background-color: #eee;
    padding: 1em;
-}
-
-.weatherboxvalue {
-   text-align: left;
+   text-align: center;
 }
 
 /*5 Day Forecast*/
@@ -210,6 +207,11 @@ main {
 
 /*Contact*/
 
+.contactbox {
+   display: flex;
+   flex-direction: column;
+}
+
 .contactdiv {
    
    justify-content: space-between;
@@ -220,9 +222,15 @@ main {
 
 .contactinfo {
    display: flex;
+   flex-direction: column;
    margin: auto;
-   padding-bottom: 1em;
+   padding: 1em;
    white-space: nowrap;
+}
+
+.contactoptions {
+   display: flex;
+   flex-direction: row;
 }
 
 .contactinfo img {
@@ -250,6 +258,10 @@ main {
 
 .contactbox h3 {
    padding-left: 1em;
+}
+
+.socialdiv {
+   display: none;
 }
 
 .mapsmall {
