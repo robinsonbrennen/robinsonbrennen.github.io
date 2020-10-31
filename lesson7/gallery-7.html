@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+   <div class="home-head">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Brennen Robinson">
+      <meta name="description" content="This website is my weather website">
+      <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
+         rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
+      <title>Simply Weather</title>
+   </div>
+</head>
+
+<body>
+   <header>
+      <div class="logo-box">
+         <img class="logo" src="/lesson4/images/simplyweathericon.png" alt="Simply Weather Logo">
+      </div>
+      <section class="headings">
+         <h1>Simply Weather</h1>
+         <div class="moto">
+            <p>Your weather without the fluff</p>
+         </div>
+      </section>
+   </header>
+   <div id="pancakemessage">
+      <p>
+         Preston Pancakes in the Park 9:00 AM Saturday at the city park pavilion.
+      </p>
+   </div>
+   <nav>
+      <ul class="navigation">
+         <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
+         <li>
+            <a href="Home">Home</a>
+         </li>
+         <li>
+            <a href="/lesson5/preston-5.html">Preston</a>
+         </li>
+         <li>
+            <a href="Soda Springs">Soda Springs</a>
+         </li>
+         <li>
+            <a href="Fish Haven">Fish Haven</a>
+         </li>
+         <li>
+            <a href="Storm Center">Storm Center</a>
+         </li>
+         <li>
+            <a href="Gallery">Gallery</a>
+         </li>
+      </ul>
+   </nav>
+   <main class="clearfix">
+      <h1>Weather Gallery</h1>
+      <div class="pictures">
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img1snow600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img1snow800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img1snow1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img1snow1200.jpg" alt="Snow">
+            </picture>
+            <p class="imgText">Snow</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img2fallroad600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img2fallroad800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img2fallroad1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img2fallroad1200.jpg"
+                  alt="Fall Road">
+            </picture>
+            <p class="imgText">Fall Road</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img3valley600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img3valley800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img3valley1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img3valley1200.jpg"
+                  alt="Valley">
+            </picture>
+            <p class="imgText">Valley</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img4oceanspray600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img4oceanspray800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img4oceanspray1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img4oceanspray1200.jpg"
+                  alt="Ocean Spray">
+            </picture>
+            <p class="imgText">Ocean Spray</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img5mountainmist600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img5mountainmist800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img5mountainmist1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img5mountainmist1200.jpg"
+                  alt="Mountain Mist">
+            </picture>
+            <p class="imgText">Mountain Mist</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img6falltrees600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img6falltrees800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img6falltrees1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img6falltrees1200.jpg"
+                  alt="Fall Trees">
+            </picture>
+            <p class="imgText">Fall Trees</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img7snowtree600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img7snowtree800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img7snowtree1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img7snowtree1200.jpg"
+                  alt="Snow Tree">
+            </picture>
+            <p class="imgText">Snow Tree</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img8fallwinter600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img8fallwinter800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img8fallwinter1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img8fallwinter1200.jpg"
+                  alt="Fall Winter">
+            </picture>
+            <p class="imgText">Fall Winter</p>
+         </div>
+         <div class="gallery">
+            <picture>
+               <source srcset="images/img9lightning600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/img9lightning800.jpg" media="(max-width: 60em)">
+               <source srcset="images/img9lightning1200.jpg" media="(max-width: 120em)">
+               <img class="galleryImg" src="images/placeholder.png" data-src="images/img9lightning1200.jpg"
+                  alt="Lightning">
+            </picture>
+            <p class="imgText">Lightning</p>
+         </div>
+      </div>
+   </main>
+   <div class="contactbox">
+      <h3>Contact Us</h3>
+      <div class="sidebysidecontact">
+         <img class="mapsmall" src="images/mappreston.JPG" alt="Preston Map">
+         <div class="contactinfo">
+            <div class="phone contactoptions">
+               <img src="images/icons8-phone-48.png" alt="Phone Icon">
+               <p>
+                  435-XXX-XXXX
+               </p>
+            </div>
+            <div class="email contactoptions">
+               <img src="images/icons8-mail.svg" alt="Email Icon">
+               <p>
+                  simplyweather@businessemail.com
+               </p>
+            </div>
+            <div class="address contactoptions">
+               <img src="images/icons8-location-48.png" alt="Location Icon">
+               <p>
+                  <a href="https://www.google.com/maps/place/234+E+1st+S,+Preston,+ID+83263/@42.0939035,-111.8725642,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7c29f0cfd05:0xc179a7de228d5523!8m2!3d42.0938995!4d-111.8703755"
+                     target="_blank">234 E 1st S Preston, ID 83263</a>
+               </p>
+            </div>
+            <div class="socialdiv contactoptions">
+               <img src="images/icons8-facebook.svg" alt="Facebook Icon">
+               <img src="images/icons8-instagram.svg" alt="Instagram Icon">
+               <img src="images/icons8-pinterest.svg" alt="Pinterest Icon">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+         Last Updated:
+         <span id="currentDate"></span>
+         <script src="js/date.js"></script>
+         <script src="js/responsiveMenu.js"></script>
+      </div>
+   </footer>
+</body>
