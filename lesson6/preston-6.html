@@ -71,13 +71,16 @@
                <span class="weatherboxvalue">Partly Cloudy</span>
             </p>
             <p>Temperature:
-               <span class="temperature weatherboxvalue">40°F</span>
+               <span id="tempCurrent" class="temperature weatherboxvalue">40</span>
+               °F
             </p>
             <p>Wind Speed:
-               <span class="windspeed weatherboxvalue">14 mph</span>
+               <span id="speed" class="windspeed weatherboxvalue">14</span>
+               mph
             </p>
             <p>Wind Chill:
-               <span class="windchill weatherboxvalue">32°F</span>
+               <span class="windchill weatherboxvalue">32</span>
+               °F
             </p>
             <p>Humidity:
                <span class="weatherboxvalue">41%</span>
@@ -174,4 +177,11 @@
          <script src="js/responsiveMenu.js"></script>
       </div>
    </footer>
+   <script src="https://ajax.googleapis.com/Arvo/Montserrat/webfont/1.6.26/webfont.js">
+      WebFont.load({
+          google: {
+              families: ['Arvo', 'Montserrat']
+          }
+      });
+  </script>
 </body>

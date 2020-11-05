@@ -8,8 +8,8 @@ windchill values not applicable
 
 
 /*Inputs*/
-var temperature = 
-var windspeed = 
+var temperature = parseFloat(document.getElementById('tempCurrent').innerText);
+var windspeed = parseFloat(document.getElementById('speed').innerText);
 var windchill;
 
 
@@ -19,7 +19,7 @@ windchill = 35.74 + (.06215 * temperature) - (35.75 * (windspeed^.16)) +
 if (temperature <= 50 && windspeed < 3.0)
    windchill = "N/A";
 else
-   return windchill;
+   
 
 
    let temperature = parseFloat(document.getElementById('temp').innerText);
