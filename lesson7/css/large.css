@@ -1,6 +1,10 @@
 @media only screen and (min-width: 60em) {
 
    /*Header*/
+   header {
+      display: block;
+      
+   }
    .logo {
       width: 18rem;
    }
@@ -15,22 +19,24 @@
       background-color: rgb(91, 213, 243);
    }
 
+   nav ul li a.selected {
+      border-top: black solid 3px;
+   }
+
    /*Body*/
    body {
       max-width: 100%;
    }
 
    /*Main*/
-   header,
    main {
       display: grid;
       grid-gap: 25px;
       justify-content: center;
-      text-align: center;
    }
 
    .galleryMain {
-      max-width: 70%;
+      max-width: 100%;
    }
 
    picture img[data-src] {
@@ -41,6 +47,8 @@
       filter: blur(0em);
       transition: filter 1s;
    }
+
+   
 
    /*Footer*/
    footer {
@@ -76,7 +84,7 @@
    }
 
    .gallery:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 
       transform: scale(1.005);
    }

@@ -2,16 +2,15 @@
 <html lang="en-us">
 
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="Brennen Robinson">
-      <meta name="description" content="This website is my weather website">
-      <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
-         rel="stylesheet">
-      <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
-      <link rel="stylesheet" href="css/table.css">
-      <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
-      <title>Simply Weather</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my weather website">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
+   <link rel="stylesheet" href="css/table.css">
+   <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
+   <title>Simply Weather</title>
 </head>
 
 <body>
@@ -27,11 +26,59 @@
       </section>
    </header>
 
-   <main class="clearfix">
-      <h1 class=""></h1>
-    
+   <main>
+      <table>
+         <thead>
+            <tr>
+               <th colspan="3">ACME Wildwest</th>
+            </tr>
+            <tr class="makeBlue">
+               <td>Period</td>
+               <td>Sales</td>
+               <td>Sales Goal</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>August</td>
+               <td>$3,590</td>
+               <td>$4,000</td>
+            </tr>
+            <tr>
+               <td>September</td>
+               <td>$4,420</td>
+               <td>$5,000</td>
+            </tr>
+            <tr>
+               <td>October</td>
+               <td>$4,870</td>
+               <td>$5,000</td>
+            </tr>
+            <tr>
+               <td>November</td>
+               <td>$8,610</td>
+               <td class="makeBlue">$7,500</td>
+            </tr>
+            <tr>
+               <td>Black Friday</td>
+               <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+               <td>December</td>
+               <td>$6,820</td>
+               <td>$7,500</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+               <td colspan="3">Compiled 11.5.2020 by Brennen Robinson</td>
+            </tr>
+         </tfoot>
+      </table>
+
+
    </main>
-   
+
    <footer>
       <div class="home-footer">
          © 2020 | Brennen Robinson | Wyoming |
@@ -46,10 +93,10 @@
 
    <script src="https://ajax.googleapis.com/Arvo/Montserrat/webfont/1.6.26/webfont.js">
       WebFont.load({
-          google: {
-              families: ['Arvo', 'Montserrat']
-          }
+         google: {
+            families: ['Ubuntu', 'sans-serif']
+         }
       });
-  </script>
-  
+   </script>
+
 </body>

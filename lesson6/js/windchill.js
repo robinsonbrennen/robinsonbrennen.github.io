@@ -8,26 +8,13 @@ windchill values not applicable
 
 
 /*Inputs*/
-var temperature = parseFloat(document.getElementById('tempCurrent').innerText);
-var windspeed = parseFloat(document.getElementById('speed').innerText);
-var windchill;
 
+let temp = parseFloat(document.getElementById('temp').innerText);
+let speed = parseFloat(document.getElementById('wind').innerText);
+var chillfactor = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + ((0.4275 * temp) * Math.pow(speed, 0.16)));
 
-windchill = 35.74 + (.06215 * temperature) - (35.75 * (windspeed^.16)) + 
-            ((.4275 * temperature) * (windspeed ^ .16));
-
-if (temperature <= 50 && windspeed < 3.0)
-   windchill = "N/A";
-else
-   
-
-
-   let temperature = parseFloat(document.getElementById('temp').innerText);
-   let windspeed = parseFloat(document.getElementById('wind').innerText);
-   var windchillval = (35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windspeed, 0.16)) + ((0.4275 * temperature) * Math.pow(windspeed, 0.16)));
-   
-   if (temperature <= 50 && windspeed >= 3.0) {
-       document.getElementById('windchill').innerHTML = windchillval.toFixed(2);
-   } else {
-       document.getElementById('windchill').innerHTML = "N/A";
-   } 
+if (temp <= 50 && speed >= 3.0) {
+    document.getElementById('chill').innerHTML = chillfactor.toFixed(2);
+} else {
+    document.getElementById('chill').innerHTML = "N/A";
+}
