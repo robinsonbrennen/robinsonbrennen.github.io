@@ -107,58 +107,69 @@ a {
 /*Main*/
 
 main {
+   background-color: #eee;
+   border-radius: 10px;
    display: block;
    padding: 20px;
    margin: auto;
    margin-left: 2%;
    margin-right: 2%;
+   margin-bottom: 2%;
 }
 
-.townname {
-   padding-left: 1rem;
+/* Form */
+
+form fieldset {
+   margin: 2rem 0;
+   border: 1px solid #445ba9;
+   border-radius: 10px;
+   padding: .5rem 2%;
 }
-
-header, main {
-   display: grid;
-   grid-gap: 25px;
-   justify-content: center;
-   text-align: center;
+form legend {
+   color: #445ba9;
+   margin: 0 1rem;
+   padding: 0 .5rem;
 }
-
-picture img[data-src] {
-   filter: blur(0.2em);
+form label.top, form div {
+   display: block;
+   padding-top: 1rem;
+   color: black;
+   font-size: .8rem;
+   text-align: left;
 }
- 
-picture img {
-   filter: blur(0em);
-   transition: filter 1s;
-}
-
-
-/*Images*/
-
-.pictures {
-   display: grid;
-   grid-gap: 12px;
-   grid-template-columns: 1fr;
-   justify-content: center;
-   margin: .5rem 0 1rem 0;
-}
-
-.gallery {
-   background-color: #fff;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   border-radius: 8px;
-   overflow: hidden;
-   margin: 0 .5rem;
-}
-
-.galleryImg {
+form label.top input, form label.top select{
+   -webkit-appearance: none;
+   display: block;
+   font-size: 1rem;
+   border: solid 1px #999;
+   border-radius: 4px;
+   padding: .75rem;
+   color: darkgray;
    width: 100%;
-   height: 100%;
-   object-fit: cover;
+   max-width: 20rem;
+   background-color: rgba(0, 0, 0, 0.2);
 }
-
+form label.sbs {
+   display: block;
+   padding: .75rem 0;
+   color: #555;
+}
+form input.submitBtn {
+   border: none;
+   background-color: #9c2c13;
+   color: white;
+   border-radius: 1rem;
+   padding: .75rem 1.5rem;
+   margin: 0 0 2rem 2%;
+   width: 96%;
+   max-width: 20rem;
+}
+form label.top input:required {
+   border-left: red solid 6px;
+}
+form label.top input:required:valid {
+   border-left: lightgreen solid 6px;
+}
 
 /*Contact*/
 
@@ -241,6 +252,10 @@ picture img {
 footer {
    background-color: #26B7FF;
    padding: 10px;
+   position: relative;
+   bottom: 0;
+   height: auto;
+   width: 100%;
 }
 
 

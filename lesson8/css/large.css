@@ -48,6 +48,11 @@
       transition: filter 1s;
    }
 
+
+   /*Form*/
+   form label.sbs {
+      padding: .4rem 0;
+   }
    
 
    /*Footer*/
