@@ -1,0 +1,108 @@
+@media only screen and (min-width: 32.5em) {
+   
+   /*Header*/
+
+   .logo {
+      width: 15rem;
+   }
+
+   /*Main*/
+
+   header, main {
+      display: grid;
+      grid-gap: 25px;
+      justify-content: center;
+      text-align: center;
+   }
+   
+   picture img[data-src] {
+      filter: blur(0.2em);
+   }
+    
+   picture img {
+      filter: blur(0em);
+      transition: filter 1s;
+   }
+
+   .pictures {
+      display: grid;
+      grid-gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 16%;
+      margin-bottom: 1rem;
+  }
+
+  .gallery {
+      height: 390px;
+  }
+
+  .galleryImg {
+      height: 350px;
+  }
+
+  .img-text {
+      margin: .6rem 0 .5rem 1rem;
+  }
+
+   /*Navigation*/
+
+   .navigation {
+      display: flex;
+      font-size: x-large;
+      line-height: 70px;
+      white-space: nowrap;
+   }
+   
+	.navigation li {
+		display: block;
+      flex: 1 1 auto;
+   }
+
+   .navigation a {
+      text-align: center;
+   }
+   
+	.navigation li:first-child {
+		display: none;
+   }
+   
+   nav ul li a.selected {
+        border-bottom: #333333 solid 3px;
+    }
+   
+   /*Contact Information*/
+   
+   .sidebysidecontact {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .contactinfo {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column: 2/3;
+   }
+
+   .mapsmall {
+     grid-row: 1/3;
+     height: 200px
+   }
+
+   .contactoptions {
+      display: flex;
+   }
+   
+   
+   /*Footer*/
+   
+   /*Image*/
+
+   .mainImg {
+      margin: 10px auto;
+      width: 100%;
+      height: auto;
+    }
+   
+   
+   
+}
