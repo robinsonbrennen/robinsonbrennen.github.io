@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="css/medium.css">
       <link rel="stylesheet" href="css/large.css">
       <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
+      <script src="/lesson8/js/stormjs.js"></script>
       <title>Simply Weather</title>
    </div>
 </head>
@@ -76,9 +77,10 @@
                    <option class="storm2">Thunderstorm</option>
                    <option class="storm2">Tornado</option>
                 </datalist>
-                <label class="sbs">Storm Severity (1 = Mild - 10 = Really Bad)<input type="range" step="1" min="1" max="10"></label>
+                <label class="sbs">Storm Severity (1 = Mild - 10 = Really Bad)<input id="severe" type="range" step="1" min="1" max="10"></label>
+                <p class="output" id="output"></p>
                 <select>
-                   <option class="region1" selected="" disabled="">Select Region</option>
+                   <option class="region1" selected disabled>Select Region</option>
                    <option class="region2">Preston</option>
                    <option class="region3">Soda Springs</option>
                    <option class="region4">Fish Haven</option>
@@ -104,9 +106,6 @@
 
          Last Updated:
          <span id="currentDate"></span>
-         <script src="js/date.js"></script>
-         <script src="js/responsiveMenu.js"></script>
-         <script src="js/imagehandling.js"></script>
       </div>
    </footer>
 </body>
