@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my weather website">
+   <title>Simply Weather</title>
+   <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css">
+   <link rel="stylesheet" href="css/large.css">
+   <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
+   <script src="/lesson8/js/stormjs.js"></script>
+</head>
+
+<body>
+   <header>
+      <div class="headings">
+         <img class="logo" src="/lesson4/images/simplyweathericon.png" alt="Simply Weather Logo">
+         <div class="tag">
+            <h1>Simply Weather</h1>
+            <div class="moto">
+               <p>Your weather without the fluff</p>
+            </div>
+         </div>
+      </div>
+   </header>
+   <nav>
+      <ul class="navigation">
+         <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+         <li>
+            <a href="index.html">Home</a>
+         </li>
+         <li>
+            <a href="/lesson5/preston-5.html">Preston</a>
+         </li>
+         <li>
+            <a href="#">Soda Springs</a>
+         </li>
+         <li>
+            <a href="#">Fish Haven</a>
+         </li>
+         <li>
+            <a href="/lesson8/stormcenter.html">Storm Center</a>
+         </li>
+         <li>
+            <a href="/lesson7/gallery-7.html">Gallery</a>
+         </li>
+      </ul>
+   </nav>
+   <main class="clearfix">
+      <h2>Preston Idaho</h2>
+        <picture class="heroImage">
+            <source srcset="/lesson6/images/hero_image_800.jpg" media="(min-width: 321px) and (max-width: 799px)">
+            <source srcset="/lesson6/images/hero_image_1200.jpg" media="(min-width: 800px)">
+            <img src="/lesson6/images/hero_image_600.jpg" alt="Hills above Preston">
+        </picture>
+
+        <div class="mainTownsDiv">
+            <section>
+                <div class="towns"></div>
+            </section>
+        </div>
+        <article class="mainArticle">
+            <picture>
+                <img class="articleImg" src="images/fall_leaves.jpg" alt="Fall leaves">
+            </picture>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet. Volutpat odio facilisis
+                    mauris sit amet massa vitae. Augue neque gravida in fermentum et sollicitudin ac. Facilisis
+                    mauris
+                    sit amet massa vitae tortor condimentum lacinia. Sagittis vitae et leo duis. Aenean pharetra
+                    magna
+                    ac placerat vestibulum. Elit ut aliquam purus sit amet luctus. Elit ut aliquam purus sit. Tempor
+                    orci eu lobortis elementum. Purus sit amet luctus venenatis. Lacus suspendisse faucibus interdum
+                    posuere lorem ipsum dolor sit. Blandit aliquam etiam erat velit scelerisque in dictum non
+                    consectetur. Libero nunc consequat interdum varius sit. Tristique et egestas quis ipsum
+                    suspendisse
+                    ultrices gravida dictum fusce. Vitae sapien pellentesque habitant morbi tristique senectus et
+                    netus.
+                    Nunc sed augue lacus viverra vitae congue eu consequat ac. Laoreet suspendisse interdum
+                    consectetur
+                    libero id faucibus.
+                </p>
+            </article>
+        </article>
+        <section class="contact">
+            <picture>
+                <img class="contactImg" src="images/map.png" alt="Office location map">
+            </picture>
+            <section>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </section>
+        </section>
+   </main>
+
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+         Last Updated:
+         <span id="currentDate"></span>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/home.js"></script>
+</body>
