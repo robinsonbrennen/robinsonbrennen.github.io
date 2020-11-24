@@ -7,6 +7,8 @@ fetch(requestURL)
    })
    .then(function (jsonObject) {
       //console.table(jsonObject); // temporary checking for valid response and data parsing
+      let countimg = 0;
+      let counttext = 0;
       const towns = jsonObject['towns'];
       for (let i = 0; i < towns.length; i++) {
          if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
@@ -28,12 +30,16 @@ fetch(requestURL)
             avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
             img.setAttribute('src', 'images/' + towns[i].photo);
             img.setAttribute('alt', towns[i].name);
+            img.setAttribute('class', 'fishhaven' + countimg);
+            countimg++
 
             info.appendChild(h2);
             info.appendChild(motto);
             info.appendChild(founded);
             info.appendChild(pop);
             info.appendChild(avgRain);
+            info.setAttribute('class', 'towninfo' + counttext)
+            counttext++
             town.appendChild(info);
             town.appendChild(img);
 
@@ -43,12 +49,10 @@ fetch(requestURL)
    });
 
 //Format Date
-//create array to match 0-6 to day of week spelled out
 let days = [
    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
 ]
 
-//create array to match 0-11 to month of year spelled out
 let months = [
    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 ]
