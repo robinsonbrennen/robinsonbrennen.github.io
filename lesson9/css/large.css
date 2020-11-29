@@ -29,68 +29,31 @@
    }
 
    /*Main*/
-   main {
-      display: grid;
-      grid-gap: 25px;
-      justify-content: center;
-   }
-
-   .galleryMain {
-      max-width: 100%;
-   }
-
-   picture img[data-src] {
-      filter: blur(0.2em);
-   }
-
-   picture img {
-      filter: blur(0em);
-      transition: filter 1s;
-   }
-
-
-   /*Form*/
-   form label.sbs {
-      padding: .4rem 0;
-   }
    
+   .heroimage {
+      width: max-content;
+   }
+
+   .towns {
+      background-color: #eee;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px black solid;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .townsection {
+      flex-direction: column;
+   }
+
+   .townsection:nth-child(even) {
+      flex-direction: column;
+   }
 
    /*Footer*/
    footer {
       font-size: 15px;
       padding: 1rem;
-   }
-
-   /*########## Images #########*/
-
-
-   .pictures {
-      display: grid;
-      grid-template-columns: repeat(3, 3fr);
-      grid-template-rows: repeat(3, 3fr);
-      margin: 2rem 0 4rem 0;
-   }
-
-   .galleryImg {
-      height: 90%;
-   }
-
-   .gallery {
-      height: 100%;
-      margin: .5rem 0;
-      padding-bottom: .2rem;
-   }
-
-   .img-text {
-      margin: 0 0;
-      display: block;
-      text-align: center;
-      padding-top: .5rem;
-   }
-
-   .gallery:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-
-      transform: scale(1.005);
    }
 }

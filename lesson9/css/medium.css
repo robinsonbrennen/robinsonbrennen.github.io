@@ -8,41 +8,40 @@
 
    /*Main*/
 
-   header, main {
-      display: grid;
-      grid-gap: 25px;
-      justify-content: center;
-      text-align: center;
+   .heroimage {
+      max-width: 100%;
+   }
+
+   .towns {
+      background-color: #eee;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px black solid;
+   }
+
+   .townsection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1rem;
+      border: 1px black solid;
    }
    
-   picture img[data-src] {
-      filter: blur(0.2em);
-   }
-    
-   picture img {
-      filter: blur(0em);
-      transition: filter 1s;
+   .townsection:nth-child(even) {
+      flex-direction: row-reverse;
    }
 
-   .pictures {
-      display: grid;
-      grid-gap: 12px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: 16%;
-      margin-bottom: 1rem;
-  }
+   .towninfo {
+      flex-direction: row;
+   }
 
-  .gallery {
-      height: 390px;
-  }
+   .fishhaven {
 
-  .galleryImg {
-      height: 350px;
-  }
-
-  .img-text {
-      margin: .6rem 0 .5rem 1rem;
-  }
+   }
+   
+   .towns img {
+      max-width: 25rem;
+   }
 
    /*Navigation*/
 
@@ -72,6 +71,11 @@
    
    /*Contact Information*/
    
+   .contact {
+      display: flex;
+      flex-direction: row;
+   }
+
    .sidebysidecontact {
       display: flex;
       justify-content: space-between;
@@ -92,8 +96,18 @@
       display: flex;
    }
    
+   .socialmedia {
+      padding: 5rem;
+      padding-left: 10rem;
+      width: 50%;
+      align-content: center;
+   }
    
    /*Footer*/
+
+   .footer {
+      position: absolute;
+   }
    
    /*Image*/
 

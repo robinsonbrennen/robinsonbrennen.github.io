@@ -107,20 +107,35 @@ a {
 /*Main*/
 
 .mainTownsDiv {
-   background-color: #eee;
    padding: 1rem;
 }
 
 .towns {
-   background-color: grey;
+   background-color: #eee;
+   margin: 0 auto;
    padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, 1fr);
+}
+
+.townsection {
+   display: block;
+   
+}
+
+.towninfo {
+   text-align: center;
 }
 
 .towns img {
-   max-width: 500px;
+   max-width: 25rem;
 }
 
-
+.mainArticle {
+   background-color: #eee;
+   padding: .5rem;
+}
 
 /*Contact*/
 
@@ -130,11 +145,19 @@ a {
 }
 
 .contactdiv {
-   
    justify-content: space-between;
    background-color: #eee;
    padding: 1em 1em;
    margin: auto;
+}
+
+.contact {
+   margin: 0 auto;
+}
+
+.contactimg {
+   max-width: 25rem;
+   padding: .5rem;
 }
 
 .contactinfo {

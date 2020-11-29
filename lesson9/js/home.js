@@ -30,16 +30,16 @@ fetch(requestURL)
             avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
             img.setAttribute('src', 'images/' + towns[i].photo);
             img.setAttribute('alt', towns[i].name);
-            img.setAttribute('class', 'fishhaven' + countimg);
-            countimg++
-
+            img.setAttribute('class', 'fishhaven');
+            
+            town.setAttribute('class', 'townsection');
             info.appendChild(h2);
             info.appendChild(motto);
             info.appendChild(founded);
             info.appendChild(pop);
             info.appendChild(avgRain);
-            info.setAttribute('class', 'towninfo' + counttext)
-            counttext++
+            info.setAttribute('class', 'towninfo')
+            
             town.appendChild(info);
             town.appendChild(img);
 
