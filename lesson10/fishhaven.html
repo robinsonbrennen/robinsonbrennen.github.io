@@ -2,36 +2,40 @@
 <html lang="en-us">
 
 <head>
-
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="author" content="Brennen Robinson">
-   <meta name="description" content="This website is my weather website">
-   <title>Simply Weather</title>
-   <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet">
-   <link rel="shortcut icon" href="images/favicon.ico">
-   <link rel="stylesheet" href="css/small.css">
-   <link rel="stylesheet" href="css/medium.css">
-   <link rel="stylesheet" href="css/large.css">
-   <link rel="stylesheet" href="css/normalize.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Brennen Robinson">
+      <meta name="description" content="This website is my weather website">
+      <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
+         rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/smalltown.css">
+      <link rel="stylesheet" href="css/mediumtown.css">
+      <link rel="stylesheet" href="css/largetown.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <title>Simply Weather</title>
 </head>
 
 <body>
    <header>
-      <div class="headings">
-         <img class="logo" src="/lesson4/images/simplyweathericon.png" alt="Simply Weather Logo">
-         <div class="tag">
-            <h1>Simply Weather</h1>
-            <div class="moto">
-               <p>Your weather without the fluff</p>
-            </div>
-         </div>
+      <div class="logo-box">
+         <img class="logo" src="/images/simplyweathericon.png" alt="Simply Weather Logo">
       </div>
+      <section class="headings">
+         <h1>Simply Weather</h1>
+         <div class="moto">
+            <p>Your weather without the fluff</p>
+         </div>
+      </section>
    </header>
+   <div id="pancakemessage">
+      <p>
+         Preston Pancakes in the Park 9:00 AM Saturday at the city park pavilion.
+      </p>
+   </div>
    <nav>
       <ul class="navigation">
-         <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+         <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
          <li>
             <a href="index.html">Home</a>
          </li>
@@ -52,13 +56,13 @@
          </li>
       </ul>
    </nav>
-   <main>
-      <h1 class="townname">Preston Idaho</h1>
+   <main class="clearfix">
+      <h1 class="townname">Fish Haven Idaho</h1>
       <div class="herodiv">
          <picture>
             <source srcset="images/hero_image_600.jpg" media="(max-width: 32.5em)">
             <source srcset="images/hero_image_800.jpg" media="(max-width: 60em)">
-            <source srcset="images/hero_image_1200.jpg" media="(max-width: 120em)">
+            <source srcset="images/hero_image_1200.jpg" media="(max-width: 120em)"> 
             <img class="mainImg" src="images/hero_image_1200.jpg" alt="Hills above Preston">
          </picture>
          <section class="weathersummary">
@@ -67,11 +71,11 @@
                <span class="weatherboxvalue">Partly Cloudy</span>
             </p>
             <p>Temperature:
-               <span id="current-temp" class="temperature weatherboxvalue"></span>
+               <span id="temp" class="temperature weatherboxvalue">40</span>
                °F
             </p>
             <p>Wind Speed:
-               <span id="windspeed" class="windspeed weatherboxvalue"></span>
+               <span id="wind" class="windspeed weatherboxvalue">14</span>
                mph
             </p>
             <p>Wind Chill:
@@ -131,7 +135,7 @@
    </main>
    <div class="contactbox">
       <h3>Contact Us</h3>
-      <div class="contactgrid">
+      <div class="sidebysidecontact">
          <img class="mapsmall" src="images/mappreston.JPG" alt="Preston Map">
          <div class="contactinfo">
             <div class="phone contactoptions">
@@ -159,18 +163,19 @@
                <img src="images/icons8-pinterest.svg" alt="Pinterest Icon">
             </div>
          </div>
-         </di>
-      </div>
-      <footer>
-         <div class="home-footer">
-            © 2020 | Brennen Robinson | Wyoming |
-            <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
-
-            Last Updated:
-            <span id="currentDate"></span>
          </div>
-      </footer>
-      <script type="text/javascript" src="js/home.js"></script>
-      <script src="js/weatherapi.js"></script>
-      <script src="js/stormjs.js"></script>
+   </div>
+   
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+         Last Updated:
+         <span id="currentDate"></span>
+         <script src="js/date.js"></script>
+         <script src="js/responsiveMenu.js"></script>
+         <script src="js/windchill.js"></script>
+      </div>
+   </footer>
 </body>
