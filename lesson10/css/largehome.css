@@ -1,0 +1,55 @@
+@media only screen and (min-width: 60em) {
+
+   /*Header*/
+   header {
+      display: block;
+      
+   }
+   .logo {
+      width: 18rem;
+   }
+
+   /*Navigation*/
+   .navigation {
+      font-size: 140%;
+   }
+
+   .navigation a:hover {
+      color: black;
+      background-color: rgb(91, 213, 243);
+   }
+
+   nav ul li a.selected {
+      border-top: black solid 3px;
+   }
+
+   /*Body*/
+   body {
+      max-width: 100%;
+   }
+
+   /*Main*/
+   
+   .towns {
+      background-color: #eee;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px black solid;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .townsection {
+      flex-direction: column;
+   }
+
+   .townsection:nth-child(even) {
+      flex-direction: column;
+   }
+
+   /*Footer*/
+   footer {
+      font-size: 15px;
+      padding: 1rem;
+   }
+}

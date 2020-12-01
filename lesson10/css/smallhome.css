@@ -106,94 +106,39 @@ a {
 
 /*Main*/
 
-main {
+main picture img {
+   max-width: 100%;
+}
+
+.maintownsdiv {
+   padding: 1rem;
+}
+
+.towns {
    background-color: #eee;
-   border-radius: 10px;
+   margin: 0 auto;
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, 1fr);
+}
+
+.townsection {
    display: block;
-   padding: 20px;
-   margin: auto;
-   margin-left: 2%;
-   margin-right: 2%;
-   margin-bottom: 2%;
+   
 }
 
-/* Form */
-
-h1 {
-   text-align: left;
+.towninfo {
+   text-align: center;
 }
 
-form fieldset {
-   margin: 2rem 0;
-   border: 1px solid #445ba9;
-   border-radius: 10px;
-   padding: .5rem 2%;
+.towns img {
+   max-width: 25rem;
 }
 
-form legend {
-   color: #445ba9;
-   margin: 0 1rem;
-   padding: 0 .5rem;
-}
-
-form label.top, form div {
-   display: block;
-   padding-top: 1rem;
-   color: black;
-   font-size: .8rem;
-   text-align: left;
-}
-
-form label.top input, form label.top select{
-   -webkit-appearance: none;
-   display: block;
-   font-size: 1rem;
-   border: solid 1px #999;
-   border-radius: 4px;
-   padding: .75rem;
-   color: darkgray;
-   width: 100%;
-   max-width: 20rem;
-   background-color: rgba(0, 0, 0, 0.2);
-}
-
-form label.sbs {
-   display: flex;
-   padding: .75rem 0;
-   color: #555;
-   flex-direction: column;
-}
-
-form input.submitBtn {
-   border: none;
-   background-color: #26B7FF;
-   color: black;
-   border-radius: 1rem;
-   padding: .75rem 1.5rem;
-   margin: 0 0 2rem 2%;
-   width: 96%;
-   max-width: 20rem;
-}
-
-form label.top input:required {
-   border-left: red solid 6px;
-}
-
-form label.top input:required:valid {
-   border-left: lightgreen solid 6px;
-}
-
-.stormcenterform {
-   display: flex;
-   flex-direction: column;
-   justify-content: left;
-   padding: 2rem;
-   justify-content: space-around;
-   margin-bottom: 2rem;
-}
-
-.regionselector {
-   width: 25%;
+.mainarticle {
+   background-color: #eee;
+   padding: .5rem;
 }
 
 /*Contact*/
@@ -204,11 +149,19 @@ form label.top input:required:valid {
 }
 
 .contactdiv {
-   
    justify-content: space-between;
    background-color: #eee;
    padding: 1em 1em;
    margin: auto;
+}
+
+.contact {
+   margin: 0 auto;
+}
+
+.contactimg {
+   max-width: 25rem;
+   padding: .5rem;
 }
 
 .contactinfo {

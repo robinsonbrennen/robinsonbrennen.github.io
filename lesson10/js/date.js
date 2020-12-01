@@ -1,15 +1,7 @@
-/* Hamburger Menu*/
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
-
-
-//current date 1
 
 let daynames = [
    "Sunday",
@@ -36,35 +28,23 @@ let months = [
 ];
 
 let d = new Date();
-let dayName = daynames[d.getDay()];
+let dayname = daynames[d.getDay()];
 let monthName = months[d.getMonth()];
-let fulldate = dayName + " " + d.getDate() + " " + monthName + " " + d.getFullYear();
+let fulldate = dayname + " " + d.getDate() + " " + monthName + " " + d.getFullYear();
 
-document.getElementById("currentDate").innerHTML = fulldate;
+document.getElementById("currentdate").innerHTML = fulldate;
 
-// if date == friday
-//    return pancake banner;
-console.log(dayName);
-if (dayName == "Friday") {
+
+if (dayname == "Friday") {
     document.getElementById("pancakemessage").style.display = "block";
 }
 else {
     document.getElementById("pancakemessage").style.display = "none";
 }
 
-
-//current date 2
-/*
+/*Footer Date*/
 try {
-   let options = {
-       weekday: "long",
-       month: "long",
-       day: "numeric",
-       year: "numeric"
-   };
-   document.getElementById(
-       "currentDate"
-   ).textContent = new Date(document.lastModified).toLocaleDateString("en-US", options);
-   } catch (e) {
-       alert("Error with code or your browser does not support Locale");
-   }*/
+    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+    document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en', options);
+ } catch (e) {
+ }

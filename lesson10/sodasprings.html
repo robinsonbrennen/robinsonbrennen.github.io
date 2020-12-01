@@ -19,7 +19,7 @@
 <body>
    <header>
       <div class="logo-box">
-         <img class="logo" src="/images/simplyweathericon.png" alt="Simply Weather Logo">
+         <img class="logo" src="images/simplyweathericon.png" alt="Simply Weather Logo">
       </div>
       <section class="headings">
          <h1>Simply Weather</h1>
@@ -37,7 +37,7 @@
       <ul class="navigation">
          <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
          <li>
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
          </li>
          <li>
             <a href="preston.html">Preston</a>
@@ -68,55 +68,30 @@
          <section class="weathersummary">
             <h3>Weather Summary</h3>
             <p>Currently:
-               <span class="weatherboxvalue">Partly Cloudy</span>
+               <span id="current" class="weatherboxvalue"></span>
             </p>
             <p>Temperature:
-               <span id="temp" class="temperature weatherboxvalue">40</span>
+               <span id="current-temp" class="temperature weatherboxvalue"></span>
                °F
             </p>
             <p>Wind Speed:
-               <span id="wind" class="windspeed weatherboxvalue">14</span>
+               <span id="wspeed" class="windspeed weatherboxvalue"></span>
                mph
             </p>
             <p>Wind Chill:
-               <span id="chill" class="windchill weatherboxvalue"></span>
+               <span id="windchill" class="windchill weatherboxvalue"></span>
                °F
             </p>
             <p>Humidity:
-               <span class="weatherboxvalue">41%</span>
+               <span id="humidity" class="humidity"></span>%
             </p>
          </section>
       </div>
-      <div class="fivedayforecastbox">
+      <section class="forecast">
          <h2>5 Day Forecast</h2>
-         <div class="fivedayforecast">
-            <div>
-               <p>Wed</p>
-               <img class="weathersvg" src="images/partlycloudysvg.svg" alt="Partly Cloudy Img">
-               <h3>40°F</h3>
-            </div>
-            <div>
-               <p>Thur</p>
-               <img class="weathersvg" src="images/snowsvg.svg" alt="Snow Img">
-               <h3>30°F</h3>
-            </div>
-            <div>
-               <p>Fri</p>
-               <img class="weathersvg" src="images/snowsvg.svg" alt="Snow Img">
-               <h3>32°F</h3>
-            </div>
-            <div>
-               <p>Sat</p>
-               <img class="weathersvg" src="images/partlycloudysvg.svg" alt="Partly Cloudy Img">
-               <h3>42°F</h3>
-            </div>
-            <div>
-               <p>Sun</p>
-               <img class="weathersvg" src="images/sunnysvg.svg" alt="Sunny Img">
-               <h3>50°F</h3>
-            </div>
+         <div class="forecast">
          </div>
-      </div>
+     </section>
       <div class="articlediv">
          <h2>Random Weather Article</h2>
          <p>
@@ -172,10 +147,10 @@
          <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
 
          Last Updated:
-         <span id="currentDate"></span>
+         <span id="currentdate"></span>
          <script src="js/date.js"></script>
-         <script src="js/responsiveMenu.js"></script>
          <script src="js/windchill.js"></script>
+         <script src="js/sodaspringsapi.js"></script>
       </div>
    </footer>
 </body>

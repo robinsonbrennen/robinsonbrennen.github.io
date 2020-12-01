@@ -15,13 +15,13 @@
    <link rel="stylesheet" href="css/mediumstormcenter.css">
    <link rel="stylesheet" href="css/largestormcenter.css">
    <link rel="stylesheet" href="css/normalize.css">
-   <script src="/js/stormjs.js"></script>
+   <script src="js/stormjs.js"></script>
 </head>
 
 <body>
    <header>
       <div class="headings">
-         <img class="logo" src="/images/simplyweathericon.png" alt="Simply Weather Logo">
+         <img class="logo" src="images/simplyweathericon.png" alt="Simply Weather Logo">
          <div class="tag">
             <h1>Simply Weather</h1>
             <div class="moto">
@@ -30,11 +30,16 @@
          </div>
       </div>
    </header>
+   <div id="pancakemessage">
+      <p>
+         Preston Pancakes in the Park 9:00 AM Saturday at the city park pavilion.
+      </p>
+   </div>
    <nav>
       <ul class="navigation">
          <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
          <li>
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
          </li>
          <li>
             <a href="preston.html">Preston</a>
@@ -56,18 +61,18 @@
    <main class="clearfix">
       <h1>Storm Center</h1>
       <form method="GET" action="thanks.html"></form>
-         <fieldset>
+         <fieldset class="stormcenterform">
             <legend>Personal Information</legend>
-            <label class="top">Full Name*<input type="text" name="fname" minlength="5" required></label>
-            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-            <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-            <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="12345" required></label>
+            <label class="top">Full Name* <input type="text" name="fname" minlength="5" required=""></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required=""></label>
+            <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="12345" required=""></label>
          </fieldset>
 
-         <fieldset>
+         <fieldset class="stormcenterform">
             <legend>Storm Information</legend>
-            <label class="top">Storm Date<input type="date" name="date"></label>
-            <label class="top">Storm Type<input name="stormtypes" list="stormtypes"></label>
+            <label class="top">Storm Date <input type="date" name="date"></label>
+            <label class="top">Storm Type <input name="stormtypes" list="stormtypes"></label>
             <datalist id="stormtypes">
                <option class="storm1" value="">Select Type</option>
                <option class="storm2">Flash Flood</option>
@@ -76,10 +81,24 @@
                <option class="storm2">Thunderstorm</option>
                <option class="storm2">Tornado</option>
             </datalist>
-            <label class="sbs">Storm Severity (1 = Mild - 10 = Really Bad)<input id="severe" type="range" step="1"
-                  min="1" max="10"></label>
-            <p class="output" id="output"></p>
-            <select>
+            <label for="severity" class="top">Storm Severity (1 - 10)
+               <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1"
+                   list="scaleDataList" oninput="adjustScale(this.value)" onchange="adjustScale(this.value)">
+           </label>
+           <span id="value"></span>
+           <datalist id="scaleDataList">
+               <option value="1">
+               <option value="2">
+               <option value="3">
+               <option value="4">
+               <option value="5">
+               <option value="6">
+               <option value="7">
+               <option value="8">
+               <option value="9">
+               <option value="10">
+           </datalist>
+            <select class="regionselector">
                <option class="region1" selected disabled>Select Region</option>
                <option class="region2">Preston</option>
                <option class="region3">Soda Springs</option>
@@ -87,13 +106,13 @@
             </select>
          </fieldset>
 
-         <fieldset>
+         <fieldset class="stormcenterform">
             <legend>Additional Information</legend>
             <p>Are you in danger?</p>
-            <label><input type="radio" name="danger" value="yes">Yes</label>
-            <label><input type="radio" name="danger" value="maybe">Maybe</label>
-            <label><input type="radio" name="danger" value="no">No</label>
-            <label><input type="text" name="comments">Additional Comments</label>
+            <label><input type="radio" name="danger" value="yes"> Yes</label>
+            <label><input type="radio" name="danger" value="maybe"> Maybe</label>
+            <label><input type="radio" name="danger" value="no"> No</label>
+            <label><input type="text" name="comments"> Additional Comments</label>
          </fieldset>
 
          <input type="submit" value="Submit Storm Report" class="submitBtn">
@@ -106,6 +125,7 @@
 
          Last Updated:
          <span id="currentDate"></span>
+         <script src="js/date.js"></script>
       </div>
    </footer>
 </body>

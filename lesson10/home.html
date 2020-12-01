@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my weather website">
+   <title>Simply Weather</title>
+   <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="css/smallhome.css">
+   <link rel="stylesheet" href="css/mediumhome.css">
+   <link rel="stylesheet" href="css/largehome.css">
+   <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+   <header>
+      <div class="headings">
+         <img class="logo" src="images/simplyweathericon.png" alt="Simply Weather Logo">
+         <div class="tag">
+            <h1>Simply Weather</h1>
+            <div class="moto">
+               <p>Your weather without the fluff</p>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div id="pancakemessage">
+      <p>
+         Preston Pancakes in the Park 9:00 AM Saturday at the city park pavilion.
+      </p>
+   </div>
+   <nav>
+      <ul class="navigation">
+         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+         <li>
+            <a href="home.html">Home</a>
+         </li>
+         <li>
+            <a href="preston.html">Preston</a>
+         </li>
+         <li>
+            <a href="sodasprings.html">Soda Springs</a>
+         </li>
+         <li>
+            <a href="fishhaven.html">Fish Haven</a>
+         </li>
+         <li>
+            <a href="stormcenter.html">Storm Center</a>
+         </li>
+         <li>
+            <a href="gallery.html">Gallery</a>
+         </li>
+      </ul>
+   </nav>
+   <main class="clearfix">
+        <picture class="heroimage">
+            <source srcset="images/hero_image_800.jpg" media="(min-width: 321px) and (max-width: 799px)">
+            <source srcset="images/hero_image_1200.jpg" media="(min-width: 800px)">
+            <img src="images/hero_image_600.jpg" alt="Hills above Preston">
+        </picture>
+
+        <div class="maintownsdiv">
+            <section>
+                <div class="towns"></div>
+            </section>
+        </div>
+        
+        <article class="mainarticle">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet. Volutpat odio facilisis
+                    mauris sit amet massa vitae. Augue neque gravida in fermentum et sollicitudin ac. Facilisis
+                    mauris
+                    sit amet massa vitae tortor condimentum lacinia. Sagittis vitae et leo duis. Aenean pharetra
+                    magna
+                    ac placerat vestibulum. Elit ut aliquam purus sit amet luctus. Elit ut aliquam purus sit. Tempor
+                    orci eu lobortis elementum. Purus sit amet luctus venenatis. Lacus suspendisse faucibus interdum
+                    posuere lorem ipsum dolor sit. Blandit aliquam etiam erat velit scelerisque in dictum non
+                    consectetur. Libero nunc consequat interdum varius sit. Tristique et egestas quis ipsum
+                    suspendisse
+                    ultrices gravida dictum fusce. Vitae sapien pellentesque habitant morbi tristique senectus et
+                    netus.
+                    Nunc sed augue lacus viverra vitae congue eu consequat ac. Laoreet suspendisse interdum
+                    consectetur
+                    libero id faucibus.
+                </p>
+            </article>
+        </article>
+   </main>
+
+   <div class="contactbox">
+      <h3>Contact Us</h3>
+      <div class="sidebysidecontact">
+         <img class="mapsmall" src="images/mappreston.JPG" alt="Preston Map">
+         <div class="contactinfo">
+            <div class="phone contactoptions">
+               <img src="images/icons8-phone-48.png" alt="Phone Icon">
+               <p>
+                  435-XXX-XXXX
+               </p>
+            </div>
+            <div class="email contactoptions">
+               <img src="images/icons8-mail.svg" alt="Email Icon">
+               <p>
+                  simplyweather@businessemail.com
+               </p>
+            </div>
+            <div class="address contactoptions">
+               <img src="images/icons8-location-48.png" alt="Location Icon">
+               <p>
+                  <a href="https://www.google.com/maps/place/234+E+1st+S,+Preston,+ID+83263/@42.0939035,-111.8725642,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7c29f0cfd05:0xc179a7de228d5523!8m2!3d42.0938995!4d-111.8703755"
+                     target="_blank">234 E 1st S Preston, ID 83263</a>
+               </p>
+            </div>
+            <div class="socialdiv contactoptions">
+               <img src="images/icons8-facebook.svg" alt="Facebook Icon">
+               <img src="images/icons8-instagram.svg" alt="Instagram Icon">
+               <img src="images/icons8-pinterest.svg" alt="Pinterest Icon">
+            </div>
+         </div>
+         </div>
+   </div>
+
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+      
+         Last Updated:
+         <span id="curr"></span>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/home.js"></script>
+</body>

@@ -13,7 +13,8 @@
       <link rel="stylesheet" href="css/small.css">
       <link rel="stylesheet" href="css/medium.css">
       <link rel="stylesheet" href="css/large.css">
-      <link rel="stylesheet" href="/assignmentwebsite/normalize.css">
+      <link rel="stylesheet" href="css/wireframe.css">
+      <link rel="stylesheet" href="css/normalize.css">
       <title>Simply Weather</title>
    </div>
 </head>
@@ -21,7 +22,7 @@
 <body>
    <header>
       <div class="headings">
-         <img class="logo" src="/lesson4/images/simplyweathericon.png" alt="Simply Weather Logo">
+         <img class="logo" src="images/simplyweathericon.png" alt="Simply Weather Logo">
          <div class="tag">
             <h1>Simply Weather</h1>
             <div class="moto">
@@ -34,7 +35,7 @@
       <ul class="navigation">
          <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
          <li>
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
          </li>
          <li>
             <a href="preston.html">Preston</a>
@@ -53,21 +54,34 @@
          </li>
       </ul>
    </nav>
+
    <main class="clearfix">
-      <!-- Put wireframe information here -->
+      <h1 class="townname">Town Wireframes</h1>
+
+      <picture>
+         <img class="wireframeimg" src="images/smallwireframe.jpg"
+                  alt="Small Wireframe Image">
+      </picture>
+      <picture>
+         <img class="wireframeimg" src="images/mediumwireframe.jpg"
+                  alt="Medium Wireframe Image">
+      </picture>
+      <picture>
+         <img class="wireframeimg" src="images/largewireframe.jpg"
+                  alt="Large Wireframe Image">
+      </picture>
    </main>
 
    <footer>
       <div class="home-footer">
          © 2020 | Brennen Robinson | Wyoming | 
          <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
-         <a href="/lesson9/home-wireframes.html" target="_blank">Home Wireframes</a>
 
          Last Updated:
-         <span id="currentDate"></span>
+         <span id="currentdate"></span>
          <script src="js/home.js"></script>
          <script src="js/responsiveMenu.js"></script>
-         <script src="js/imagehandling.js"></script>
+         <script src="js/date.js"></script>
       </div>
    </footer>
 </body>
