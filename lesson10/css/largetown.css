@@ -3,6 +3,11 @@
       max-width: 100%;
    }
 
+   .forecastCard {
+      border: 3px black solid;
+      padding: 3rem;
+   }
+
    .logo {
       width: 18rem;
    }

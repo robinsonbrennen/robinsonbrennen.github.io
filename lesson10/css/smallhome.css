@@ -41,7 +41,7 @@ header {
 .headings {
    display: flex;
    flex-direction: row;
-   justify-content: left;
+   justify-content: center;
 }
 
 
@@ -106,8 +106,9 @@ a {
 
 /*Main*/
 
-main picture img {
-   max-width: 100%;
+.herofix {
+   display: flex;
+   justify-content: center;
 }
 
 .maintownsdiv {
@@ -124,21 +125,29 @@ main picture img {
 }
 
 .townsection {
-   display: block;
-   
+   display: flex;
+   flex-direction: column;
 }
 
 .towninfo {
    text-align: center;
+
 }
 
 .towns img {
    max-width: 25rem;
+   
 }
 
 .mainarticle {
    background-color: #eee;
-   padding: .5rem;
+   padding-left: .5rem;
+   max-width: 90%;
+}
+
+.articlealign {
+   display: flex;
+   justify-content: center;
 }
 
 /*Contact*/
@@ -212,8 +221,8 @@ main picture img {
    position: relative;
    display: block;
    margin: auto;
-   max-width: 90%;
-   padding-top: 1rem;
+   max-width: 100%;
+   padding: 1rem;
 }
 
 .mapprestonlarge {

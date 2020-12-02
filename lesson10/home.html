@@ -58,40 +58,43 @@
       </ul>
    </nav>
    <main class="clearfix">
-        <picture class="heroimage">
-            <source srcset="images/hero_image_800.jpg" media="(min-width: 321px) and (max-width: 799px)">
-            <source srcset="images/hero_image_1200.jpg" media="(min-width: 800px)">
-            <img src="images/hero_image_600.jpg" alt="Hills above Preston">
-        </picture>
-
-        <div class="maintownsdiv">
-            <section>
-                <div class="towns"></div>
-            </section>
-        </div>
-        
-        <article class="mainarticle">
+      <div class="herofix">
+         <picture>
+            <source srcset="images/hero_image_600.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/hero_image_800.jpg" media="(max-width: 60em)">
+            <source srcset="images/hero_image_1200.jpg" media="(max-width: 120em)"> 
+            <img class="mainImg" src="images/hero_image_1200.jpg" alt="Hills above Preston">
+         </picture>
+      </div>
+      <div class="maintownsdiv">
+         <section>
+            <div class="towns"></div>
+         </section>
+      </div>
+      <div class="articlealign">
+         <article class="mainarticle">
             <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet. Volutpat odio facilisis
-                    mauris sit amet massa vitae. Augue neque gravida in fermentum et sollicitudin ac. Facilisis
-                    mauris
-                    sit amet massa vitae tortor condimentum lacinia. Sagittis vitae et leo duis. Aenean pharetra
-                    magna
-                    ac placerat vestibulum. Elit ut aliquam purus sit amet luctus. Elit ut aliquam purus sit. Tempor
-                    orci eu lobortis elementum. Purus sit amet luctus venenatis. Lacus suspendisse faucibus interdum
-                    posuere lorem ipsum dolor sit. Blandit aliquam etiam erat velit scelerisque in dictum non
-                    consectetur. Libero nunc consequat interdum varius sit. Tristique et egestas quis ipsum
-                    suspendisse
-                    ultrices gravida dictum fusce. Vitae sapien pellentesque habitant morbi tristique senectus et
-                    netus.
-                    Nunc sed augue lacus viverra vitae congue eu consequat ac. Laoreet suspendisse interdum
-                    consectetur
-                    libero id faucibus.
-                </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore
+                  et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet. Volutpat odio facilisis
+                  mauris sit amet massa vitae. Augue neque gravida in fermentum et sollicitudin ac. Facilisis
+                  mauris
+                  sit amet massa vitae tortor condimentum lacinia. Sagittis vitae et leo duis. Aenean pharetra
+                  magna
+                  ac placerat vestibulum. Elit ut aliquam purus sit amet luctus. Elit ut aliquam purus sit. Tempor
+                  orci eu lobortis elementum. Purus sit amet luctus venenatis. Lacus suspendisse faucibus interdum
+                  posuere lorem ipsum dolor sit. Blandit aliquam etiam erat velit scelerisque in dictum non
+                  consectetur. Libero nunc consequat interdum varius sit. Tristique et egestas quis ipsum
+                  suspendisse
+                  ultrices gravida dictum fusce. Vitae sapien pellentesque habitant morbi tristique senectus et
+                  netus.
+                  Nunc sed augue lacus viverra vitae congue eu consequat ac. Laoreet suspendisse interdum
+                  consectetur
+                  libero id faucibus.
+               </p>
             </article>
-        </article>
+         </article>
+      </div>
    </main>
 
    <div class="contactbox">
@@ -124,7 +127,7 @@
                <img src="images/icons8-pinterest.svg" alt="Pinterest Icon">
             </div>
          </div>
-         </div>
+      </div>
    </div>
 
    <footer>
@@ -132,7 +135,7 @@
          © 2020 | Brennen Robinson | Wyoming |
          <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
 
-      
+
          Last Updated:
          <span id="curr"></span>
       </div>

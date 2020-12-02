@@ -35,7 +35,7 @@ let fulldate = dayname + " " + d.getDate() + " " + monthName + " " + d.getFullYe
 document.getElementById("currentdate").innerHTML = fulldate;
 
 
-if (dayname == "Friday") {
+if (daynames == "Friday") {
     document.getElementById("pancakemessage").style.display = "block";
 }
 else {

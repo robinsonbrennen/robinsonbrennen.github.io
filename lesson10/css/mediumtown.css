@@ -50,6 +50,11 @@
         display: block;
         text-align: center;
    }
+
+   .forecastCard {
+      border: 3px black solid;
+      padding: 1.5em;
+   }
    
    /*Article*/
    
