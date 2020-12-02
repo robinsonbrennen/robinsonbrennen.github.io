@@ -34,13 +34,15 @@
       background-color: #eee;
       margin: 0 auto;
       padding: 1rem;
-      border: 1px black solid;
+      border-radius: 10px;
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
    }
 
    .townsection {
       flex-direction: column;
+      border: 3px solid black;
    }
 
    .townsection:nth-child(even) {

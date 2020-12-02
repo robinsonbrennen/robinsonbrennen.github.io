@@ -9,9 +9,6 @@
    /*Main*/
 
    .towns {
-      background-color: #eee;
-      margin: 0 auto;
-      padding: 1rem;
       border: 1px black solid;
       max-width: 90%;
    }

@@ -111,6 +111,13 @@ a {
    justify-content: center;
 }
 
+.heroimg {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   position: relative;
+}
+
 .maintownsdiv {
    padding: 1rem;
 }
@@ -143,6 +150,7 @@ a {
    background-color: #eee;
    padding-left: .5rem;
    max-width: 90%;
+   border-radius: 10px;
 }
 
 .articlealign {
@@ -155,6 +163,7 @@ a {
 .contactbox {
    display: flex;
    flex-direction: column;
+   margin-left: 4.5rem;
 }
 
 .contactdiv {
