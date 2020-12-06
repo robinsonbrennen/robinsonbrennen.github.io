@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Brennen Robinson">
+      <meta name="description" content="This website is my weather website">
+      <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300&display=swap"
+         rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/smalltown.css">
+      <link rel="stylesheet" href="css/mediumtown.css">
+      <link rel="stylesheet" href="css/largetown.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <title>Simply Weather</title>
+</head>
+
+<body>
+   <header>
+      <div class="logo-box">
+         <img class="logo" src="images/simplyweathericon.png" alt="Simply Weather Logo">
+      </div>
+      <section class="headings">
+         <h1>Simply Weather</h1>
+         <div class="moto">
+            <p>Your weather without the fluff</p>
+         </div>
+      </section>
+   </header>
+   <div id="pancakemessage">
+      <p>
+         Preston Pancakes in the Park 9:00 AM Saturday at the city park pavilion.
+      </p>
+   </div>
+   <nav>
+      <ul class="navigation">
+         <li><a class="ham" href="#" onclick="toggleMenuw()">&#9776; Menu</a></li>
+         <li>
+            <a href="home.html">Home</a>
+         </li>
+         <li>
+            <a href="preston.html">Preston</a>
+         </li>
+         <li>
+            <a href="sodasprings.html">Soda Springs</a>
+         </li>
+         <li>
+            <a href="fishhaven.html">Fish Haven</a>
+         </li>
+         <li>
+            <a href="stormcenter.html">Storm Center</a>
+         </li>
+         <li>
+            <a href="gallery.html">Gallery</a>
+         </li>
+      </ul>
+   </nav>
+   <main class="clearfix">
+      <h1 class="townname">Preston Idaho</h1>
+      <div class="herodiv">
+         <picture>
+            <source srcset="images/hero_image_600.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/hero_image_800.jpg" media="(max-width: 60em)">
+            <source srcset="images/hero_image_1200.jpg" media="(max-width: 120em)"> 
+            <img class="mainImg" src="images/hero_image_1200.jpg" alt="Hills above Preston">
+         </picture>
+         <section class="weathersummary">
+            <h3>Weather Summary</h3>
+            <p>Currently:
+               <span id="current" class="weatherboxvalue"></span>
+            </p>
+            <p>Temperature:
+               <span id="current-temp" class="temperature weatherboxvalue"></span>
+               °F
+            </p>
+            <p>Wind Speed:
+               <span id="wspeed" class="windspeed weatherboxvalue"></span>
+               mph
+            </p>
+            <p>Wind Chill:
+               <span id="windchill" class="windchill weatherboxvalue"></span>
+               °F
+            </p>
+            <p>Humidity:
+               <span id="humidity" class="weatherboxvalue"></span>%
+            </p>
+         </section>
+      </div>
+      <section class="foreCast">
+         <h2>5 Day Forecast</h2>
+         <div class="forecast">
+         </div>
+     </section>
+      <div class="articlediv">
+         <h2>Random Weather Article</h2>
+         <p>
+            <img class="floatimg" src="images/prestonfield.jpg" alt="Preston Field">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil non nam tempora
+            excepturi nobis numquam hic accusamus, modi, illum dicta atque quisquam sapiente inventore
+            totam repellat cupiditate dolor. Voluptate laboriosam, fugit neque mollitia doloremque hic
+            nemo praesentium atque quisquam quidem aliquam ipsum. Explicabo provident inventore id itaque
+            suscipit quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed suscipit et nulla
+            quis quo! Sequi, at aliquam excepturi ullam libero, voluptates ipsum quisquam iure porro saepe
+            omnis voluptas dicta dolor. Natus sequi eligendi sed reprehenderit expedita hic, at perspiciatis
+            est dignissimos voluptas voluptatum nihil dolores? Consectetur fuga animi molestiae minus?
+            <img class="blockimg" src="images/prestonfield.jpg" alt="Preston Field">
+         </p>
+      </div>
+      <div id="upcomingEvents"></div>
+   </main>
+   <div class="contactbox">
+      <h3>Contact Us</h3>
+      <div class="sidebysidecontact">
+         <img class="mapsmall" src="images/mappreston.JPG" alt="Preston Map">
+         <div class="contactinfo">
+            <div class="phone contactoptions">
+               <img src="images/icons8-phone-48.png" alt="Phone Icon">
+               <p>
+                  435-XXX-XXXX
+               </p>
+            </div>
+            <div class="email contactoptions">
+               <img src="images/icons8-mail.svg" alt="Email Icon">
+               <p>
+                  simplyweather@businessemail.com
+               </p>
+            </div>
+            <div class="address contactoptions">
+               <img src="images/icons8-location-48.png" alt="Location Icon">
+               <p>
+                  <a href="https://www.google.com/maps/place/234+E+1st+S,+Preston,+ID+83263/@42.0939035,-111.8725642,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7c29f0cfd05:0xc179a7de228d5523!8m2!3d42.0938995!4d-111.8703755"
+                     target="_blank">234 E 1st S Preston, ID 83263</a>
+               </p>
+            </div>
+            <div class="socialdiv contactoptions">
+               <img src="images/icons8-facebook.svg" alt="Facebook Icon">
+               <img src="images/icons8-instagram.svg" alt="Instagram Icon">
+               <img src="images/icons8-pinterest.svg" alt="Pinterest Icon">
+            </div>
+         </div>
+         </div>
+   </div>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a>
+
+         Last Updated:
+         <span id="currentdate"></span>
+         <script src="js/date.js"></script>
+         <script src="js/windchill.js"></script>
+         <script src="js/prestonapi.js"></script>
+         <script src="js/events.js"></script>
+      </div>
+   </footer>
+</body>

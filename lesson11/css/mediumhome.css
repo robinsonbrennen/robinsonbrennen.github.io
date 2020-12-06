@@ -1,0 +1,112 @@
+@media only screen and (min-width: 32.5em) {
+   
+   /*Header*/
+
+   .logo {
+      width: 15rem;
+   }
+
+   /*Main*/
+
+   .towns {
+      border: 1px black solid;
+      max-width: 90%;
+   }
+
+   .townsection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1rem;
+      border: 1px black solid;
+   }
+   
+   .townsection:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+
+   .towninfo {
+      flex-direction: row;
+   }
+   
+   .towns img {
+      max-width: 25rem;
+   }
+
+   /*Navigation*/
+
+   .navigation {
+      display: flex;
+      font-size: x-large;
+      line-height: 70px;
+      white-space: nowrap;
+   }
+   
+	.navigation li {
+		display: block;
+      flex: 1 1 auto;
+   }
+
+   .navigation a {
+      text-align: center;
+   }
+   
+	.navigation li:first-child {
+		display: none;
+   }
+   
+   nav ul li a.selected {
+        border-bottom: #333333 solid 3px;
+    }
+   
+   /*Contact Information*/
+   
+   .contact {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .sidebysidecontact {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .contactinfo {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column: 2/3;
+   }
+
+   .mapsmall {
+     grid-row: 1/3;
+     height: 200px
+   }
+
+   .contactoptions {
+      display: flex;
+   }
+   
+   .socialmedia {
+      padding: 5rem;
+      padding-left: 10rem;
+      width: 50%;
+      align-content: center;
+   }
+   
+   /*Footer*/
+
+   .footer {
+      position: absolute;
+   }
+   
+   /*Image*/
+
+   .mainImg {
+      margin: 10px auto;
+      width: 100%;
+      height: auto;
+    }
+   
+   
+   
+}
