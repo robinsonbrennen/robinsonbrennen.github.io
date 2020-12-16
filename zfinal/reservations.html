@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my Scoots Rentals Website">
+   <title>Scoots Rentals</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/scootsfavicon.png">
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css">
+   <link rel="stylesheet" href="css/large.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header class="topnav">
+      <a href="home.html" class="active"><img class="logo" src="images/scootslogo.png" alt="Scoots Rentals Logo"></a>
+      <div id="mylinks">
+         <a href="home.html">Home</a>
+         <a href="rentals.html">Rentals</a>
+         <a href="reservations.html" class="active">Reservations</a>
+         <a href="tours.html">Tours</a>
+         <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+      </div>
+   </header>
+   <main class="clearfix">
+      <div class="herodiv">
+         <picture>
+            <source srcset="images/beachmal.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/beachmal.jpg" media="(max-width: 60em)">
+            <source srcset="images/beachmal.jpg" media="(max-width: 120em)">
+            <img class="heroimage" src="images/beachmal.jpg" alt="Scooter on the road.">
+         </picture>
+      </div>
+      <h1 class="resmain1">Reservations</h1>
+      <h3 class="resmain2">Information and Services</h3>
+      <p class="resmain3">
+         A $50 security deposit is required to confirm reservations.
+         A valid drivers license is required in hand at time of rental.
+         No one under 12 years of age are allowed to ride on the scooters.
+         Fuel charge not included.
+         Unlimited mileage.
+         Liability insurance is free of charge.
+         Reservations rate requires 24 hour prior notification.
+         Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+         Payment via Google Pay, cash, credit card, debit card, or PayPal.
+         Rentals may be returned to either location.
+      </p>
+      <form method="GET" action="thanks.html" class="formmain">
+         <fieldset class="reservationform1">
+            <legend>Rental Information</legend>
+            <label class="top">Beginning Date* <input type="date" name="bdate" required></label>
+            <label class="top">End Date* <input type="date" name="edate" required></label>
+            <label class="top">Rental Type* <input name="bdate" list="rentaltypes" required></label>
+            <datalist id="rentaltypes">
+               <option class="rent1" selected disabled>Select Type</option>
+               <option class="rent1">Honda Metropolitan (49cc)</option>
+               <option class="rent1">Honda Dio (110cc)</option>
+               <option class="rent1">Honda PCX150 (149cc)</option>
+               <option class="rent1">Honda Pioneer 1000</option>
+               <option class="rent1">4-Door Jeep Wrangler - manual with A/C</option>
+               <option class="rent1">2-Door Jeep Wrangler - open air - manual</option>
+            </datalist>
+            <label class="top">Number of Rentals* <input type="number" name="number" required></label>
+         </fieldset>
+         <fieldset class="reservationform2">
+            <legend>Information for Reservation</legend>
+            <label class="top">Full Name* <input type="text" name="fname" required></label>
+            <label class="top">Phone Number <input type="tel" name="phone"></label>
+            <label class="top">Email* <input type="email" name="email" required></label>
+            <label class="top">Home Country* <input type="text" name="home" pattern="[A-Za-z]{3}" title="Three letter country code" maxlength="3" required></label>
+            <label class="top">Cruise Line <input type="text" name="cruiseline"></label>
+            <label class="top">Additional Requests/Comments <input type="text" name="comments"></label>
+         </fieldset>
+         <input type="submit" value="Submit Reservation" class="submitbtn">
+      </form>
+   </main>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="#" target="_blank"></a>
+
+         Last Updated:
+         <span id="currentdate"></span>
+      </div>
+      <div class="media">
+         <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook icon"></a>
+         <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="facebook icon"></a>
+         <a href="https://www.pinterest.com"><img src="images/pinterest.svg" alt="facebook icon"></a>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/scoots.js"></script>
+</body>

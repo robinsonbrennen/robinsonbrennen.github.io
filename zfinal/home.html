@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my Scoots Rentals Website">
+   <title>Scoots Rentals</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/scootsfavicon.png">
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css">
+   <link rel="stylesheet" href="css/large.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header class="topnav">
+      <a href="home.html" class="active"><img class="logo" src="images/scootslogo.png" alt="Scoots Rentals Logo"></a>
+      <div id="mylinks">
+         <a href="home.html" class="active">Home</a>
+         <a href="rentals.html">Rentals</a>
+         <a href="reservations.html">Reservations</a>
+         <a href="tours.html">Tours</a>
+         <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+      </div>
+   </header>
+   <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Emergency weather alerts will be displayed here!
+   </div>
+   <main class="clearfix">
+      <div class="herodiv">
+         <div class="cta">
+            <a class="button" href="rentals.html">Reserve Now!</a>
+            <picture>
+               <source srcset="images/heroimage600.jpg" media="(max-width: 32.5em)">
+               <source srcset="images/heroimage800.jpg" media="(max-width: 60em)">
+               <source srcset="images/heroimage2000.jpg" media="(max-width: 120em)">
+               <img class="heroimage" src="images/heroimage2000.jpg" alt="Scooter on the road.">
+            </picture>
+         </div>
+         <div class="container">
+            <div class="myslides">
+               <div class="numbertext">This is the first of our scooter options the Honda Metro Scooter 1 seater.</div>
+               <img src="images/scooter1.jpg" style="width:100%">
+            </div>
+            <div class="myslides">
+               <div class="numbertext">This is the Honda Dio Scooter 2 seater.</div>
+               <img src="images/scooter2.jpg" style="width:100%">
+            </div>
+            <div class="myslides">
+               <div class="numbertext">This is the Honda PCX150 Scooter 2 seater.</div>
+               <img src="images/scooter3.jpg" style="width:100%">
+            </div>
+            <div class="myslides">
+               <div class="numbertext">This is the Honda Pioneer ATV 4 seater.</div>
+               <img src="images/sidebyside.jpg" style="width:100%">
+            </div>
+            <div class="myslides">
+               <div class="numbertext">This is the Jeep Wrangler - 4 door with a/c 5 seater.</div>
+               <img src="images/4-door-jeep.jpg" style="width:100%">
+            </div>
+            <div class="myslides">
+               <div class="numbertext">This is the Jeep Wrangler - 2 door 4 seater.</div>
+               <img src="images/2-door-jeep.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="row">
+               <div class="column">
+                  <img class="demo cursor" src="images/scooter1.jpg" style="width:100%" onclick="currentSlide(1)"
+                     alt="Scooter 1">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="images/scooter2.jpg" style="width:100%" onclick="currentSlide(2)"
+                     alt="Scooter 2">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="images/scooter3.jpg" style="width:100%" onclick="currentSlide(3)"
+                     alt="Scooter 3">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="images/sidebyside.jpg" style="width:100%" onclick="currentSlide(4)"
+                     alt="Side by Side">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="images/4-door-jeep.jpg" style="width:100%" onclick="currentSlide(5)"
+                     alt="4-Door Jeep">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="images/2-door-jeep.jpg" style="width:100%" onclick="currentSlide(6)"
+                     alt="2-Door Jeep">
+               </div>
+            </div>
+         </div>
+         <section class="weathersummary">
+            <h2>Current Weather</h2>
+            <p>Currently:
+               <span id="current" class="weather"></span>
+            </p>
+            <p>Temperature:
+               <span id="current-temp" class="temperature weather"></span>
+               °F
+            </p>
+            <p>Humidity:
+               <span id="humidity" class="weather"></span>%
+            </p>
+         </section>
+      </div>
+      <section class="foreCast">
+         <h2>5 Day Forecast</h2>
+         <div class="forecast">
+         </div>
+      </section>
+   </main>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="#" target="_blank"></a>
+
+         Last Updated:
+         <span id="currentdate"></span>
+      </div>
+      <div class="media">
+         <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook icon"></a>
+         <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="facebook icon"></a>
+         <a href="https://www.pinterest.com"><img src="images/pinterest.svg" alt="facebook icon"></a>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/scoots.js"></script>
+</body>

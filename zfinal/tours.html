@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my Scoots Rentals Website">
+   <title>Scoots Rentals</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/scootsfavicon.png">
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css">
+   <link rel="stylesheet" href="css/large.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header class="topnav">
+      <a href="home.html" class="active"><img class="logo" src="images/scootslogo.png" alt="Scoots Rentals Logo"></a>
+      <div id="mylinks">
+         <a href="home.html">Home</a>
+         <a href="rentals.html">Rentals</a>
+         <a href="reservations.html">Reservations</a>
+         <a href="tours.html" class="active">Tours</a>
+         <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+      </div>
+   </header>
+   <main>
+      <div class="herodiv">
+         <picture>
+            <source srcset="images/cancun.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/cancun.jpg" media="(max-width: 60em)">
+            <source srcset="images/cancun.jpg" media="(max-width: 120em)">
+            <img class="heroimage" src="images/cancun.jpg" alt="Scooter on the road.">
+         </picture>
+      </div>
+      <article class="toursarticle">
+         <h1>Cozumel</h1>
+         <p>Cozumel was a commercial and ceremonial centre during the Mayan period (about 250 to 950 ce), and the island
+            has several small archaeological sites. In 1518 Juan de Grijalva led the first Spanish expedition to
+            Cozumel. In 1519 Hernán Cortés used the island as a base for Spanish efforts to conquer the Maya.</p>
+      </article>
+      <div class="tourinfo">
+         <h1>Tours</h1>
+         <p>There are many tours that we can offer as well as tours that you can take a map and go with your family or friends! Here are a few we found online!</p>
+         <a href="https://www.cozumel-tours.com" class="touroptions" target="_blank">Best Option</a>
+         <a href="https://www.viator.com" class="touroptions" target="_blank">Next Best Option</a>
+         <a href="https://www.tripadvisor.com" class="touroptions" target="_blank">Cheapest Option</a>
+         <a href="https://www.thisiscozumel.com" class="touroptions" target="_blank">Highest Rated Option</a>
+         <a href="https://www.cozumelcruiseexcursions.com" class="touroptions" target="_blank">Most Bang-for-your-Buck Option</a>
+      </div>
+   </main>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="#" target="_blank"></a>
+
+         Last Updated:
+         <span id="currentdate"></span>
+      </div>
+      <div class="media">
+         <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook icon"></a>
+         <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="facebook icon"></a>
+         <a href="https://www.pinterest.com"><img src="images/pinterest.svg" alt="facebook icon"></a>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/scoots.js"></script>
+</body>

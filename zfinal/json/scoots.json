@@ -1,0 +1,121 @@
+{
+   "rentals": [
+      {
+         "scooters": [
+            {
+               "name": "Honda Metropolitan",
+               "cc": "(49cc)",
+               "people": "1 person",
+               "reservation": [
+                  {
+                     "half": "$20",
+                     "full": "$30"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$25",
+                     "full": "$35"
+                  }
+               ]
+            },
+            {
+               "name": "Honda Dio",
+               "cc": "(110cc)",
+               "people": "2 person",
+               "reservation": [
+                  {
+                     "half": "$30",
+                     "full": "$40"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$35",
+                     "full": "$45"
+                  }
+               ]
+            },
+            {
+               "name": "Honda PCX150",
+               "cc": "(149cc)",
+               "people": "2 person",
+               "reservation": [
+                  {
+                     "half": "$40",
+                     "full": "$50"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$45",
+                     "full": "$55"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "side-by-side": [
+            {
+               "name": "Honda Pioneer 1000",
+               "people": "4 people max",
+               "reservation": [
+                  {
+                     "half": "$50",
+                     "full": "$70"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$60",
+                     "full": "$80"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "jeeps": [
+            {
+               "name": "4-door Jeep Wrangler",
+               "aircon": "manual with A/C",
+               "drive": "manual",
+               "people": "5 people max",
+               "reservation": [
+                  {
+                     "half": "$70",
+                     "full": "$100"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$85",
+                     "full": "$125"
+                  }
+               ]
+            },
+            {
+               "name": "2-door Jeep Wrangler",
+               "aircon": "open air",
+               "drive": "manual",
+               "people": "4 people max",
+               "reservation": [
+                  {
+                     "half": "$60",
+                     "full": "$85"
+                  }
+               ],
+               "walkin": [
+                  {
+                     "half": "$70",
+                     "full": "$90"
+                  }
+               ]
+            }
+         ]
+      }
+      
+      
+   ]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Brennen Robinson">
+   <meta name="description" content="This website is my Scoots Rentals Website">
+   <title>Scoots Rentals</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="images/scootsfavicon.png">
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css">
+   <link rel="stylesheet" href="css/large.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header class="topnav">
+         <a href="home.html" class="active"><img class="logo" src="images/scootslogo.png" alt="Scoots Rentals Logo"></a>
+         <div id="mylinks">
+            <a href="home.html">Home</a>
+            <a href="rentals.html" class="active">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="tours.html">Tours</a>
+            <a href="contact.html">Contact</a>
+         </div>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
+   <main>
+      <div class="herodiv">
+         <picture>
+            <source srcset="images/heroimage600.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/heroimage800.jpg" media="(max-width: 60em)">
+            <source srcset="images/heroimage2000.jpg" media="(max-width: 120em)">
+            <img class="heroimage" src="images/heroimage2000.jpg" alt="Scooter on the road.">
+         </picture>
+      </div>
+
+   </main>
+   <footer>
+      <div class="home-footer">
+         © 2020 | Brennen Robinson | Wyoming |
+         <a href="#" target="_blank"></a>
+
+         Last Updated:
+         <span id="currentdate"></span>
+      </div>
+      <div class="media">
+         <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook icon"></a>
+         <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="facebook icon"></a>
+         <a href="https://www.pinterest.com"><img src="images/pinterest.svg" alt="facebook icon"></a>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/scoots.js"></script>
+   <script type="text/javascript" src="json/scoots.json"></script>
+</body>
