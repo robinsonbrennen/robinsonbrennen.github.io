@@ -144,10 +144,34 @@ fetch(requestURL)
       for (let i = 0; i < rentals.length; i++) {
          let card = document.createElement('section');
          let h2 = document.createElement('h2');
-         let 
+         let engine = document.createElement('p');
+         let people = document.createElement('p');
+         let reservehalf = document.createElement('p');
+         let reservefull = document.createElement('p');
+         let walkinhalf = document.createElement('p');
+         let walkinfull = document.createElement('p');
+         let image = document.createElement('img');
 
 
          h2.textContent = rentals[i].name;
-         
+         engine.textContent = 'Engine Type: ' + rentals[i].engine;
+         people.textContent = 'Seat Limit: ' + rentals[i].people;
+         reservehalf.textContent = 'Reserve Half Day: ' + rentals[i].reservehalf;
+         reservefull.textContent = 'Reserve Full Day: ' + rentals[i].reservefull;
+         walkinhalf.textContent = 'Walk-in Half Day: ' + rentals[i].walkinhalf;
+         walkinfull.textContent = 'Walk-in Full Day: ' + rentals[i].walkinfull;
+         image.setAttribute('src', rentals[i].image);
+         image.setAttribute('alt', rentals[i].name);
+
+         card.appendChild(h2);
+         card.appendChild(engine);
+         card.appendChild(people);
+         card.appendChild(reservehalf);
+         card.appendChild(reservefull);
+         card.appendChild(walkinhalf);
+         card.appendChild(walkinfull);
+         card.appendChild(image);
+
+         document.querySelector('div.cards').appendChild(card);
       }
-   })
+   });
