@@ -58,10 +58,9 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.500
 fetch(forecastURL)
    .then((response) => response.json())
    .then((jsObject) => {
-      console.log(jsObject);
       const days = jsObject['list'];
       //changed i<days.length to i<22
-      for (let i = 0; i < days.length; i++) {
+      for (let i = 0; i < 23; i++) {
          if (days[i].dt_txt.includes("18:00:00")) {
             imagesrc = 'https://api.openweathermap.org/img/w/' + days[i].weather[0].icon + '.png';
             let forecast = document.createElement('section');
