@@ -276,7 +276,7 @@ input[type=submit] {
 .forecast {
    display: flex;
    justify-content: space-around;
-   flex-direction: row nowrap;
+   flex-direction: row;
    text-align: center;
 }
 

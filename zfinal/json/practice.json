@@ -1,0 +1,64 @@
+{
+   "rentals": [
+      {
+         "type": "Honda Metropolitan",
+         "engine": "(49cc)",
+         "people": "1 seater",
+         "reservehalf": "$20",
+         "reservefull": "$30",
+         "walkinhalf": "$25",
+         "walkinfull": "$35",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/scooter1.jpg"
+      },
+      {
+         "type": "Honda Dio",
+         "engine": "(110cc)",
+         "people": "2 seater",
+         "reservehalf": "$30",
+         "reservefull": "$40",
+         "walkinhalf": "$35",
+         "walkinfull": "$45",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/scooter2.jpg"
+      },
+      {
+         "type": "Honda PCX150",
+         "engine": "(149cc)",
+         "people": "2 seater",
+         "reservehalf": "$40",
+         "reservefull": "$50",
+         "walkinhalf": "$45",
+         "walkinfull": "$55",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/scooter3.jpg"
+      },
+      {
+         "type": "Honda Pioneer 1000",
+         "engine": "",
+         "people": "4 seater",
+         "reservehalf": "$50",
+         "reservefull": "$70",
+         "walkinhalf": "$60",
+         "walkinfull": "$80",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/sidebyside.jpg"
+      },
+      {
+         "type": "4-door Jeep Wrangler",
+         "engine": "manual with A/C",
+         "people": "5 seater",
+         "reservehalf": "$70",
+         "reservefull": "$100",
+         "walkinhalf": "$85",
+         "walkinfull": "$125",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/4-door-jeep.jpg"
+      },
+      {
+         "type": "2-door Jeep Wrangler",
+         "engine": "manual with open air",
+         "people": "4 seater",
+         "reservehalf": "$60",
+         "reservefull": "$85",
+         "walkinhalf": "$70",
+         "walkinfull": "$90",
+         "image": "https://robinsonbrennen.github.io/zfinal/images/2-door-jeep.jpg"
+      }
+   ]
+}

@@ -1,3 +1,4 @@
+
 /***********************#***************************/
 function myFunction() {
    var x = document.getElementById("mylinks");
@@ -131,4 +132,22 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-/***********************JSON Retrieve***************************/
+/***********************JSON Call***************************/
+const requestURL = 'https://robinsonbrennen.github.io/zfinal/json/practice.json';
+
+fetch(requestURL)
+   .then(function (response) {
+      return response.json();
+   })
+   .then(function (jsonObject) {
+      const rentals = jsonObject['rentals'];
+      for (let i = 0; i < rentals.length; i++) {
+         let card = document.createElement('section');
+         let h2 = document.createElement('h2');
+         let 
+
+
+         h2.textContent = rentals[i].name;
+         
+      }
+   })
