@@ -74,6 +74,53 @@ picture {
    z-index: 1;
 }
 
+/*****************************Rental***************************/
+.rentalstitle {
+   text-align: left;
+   font-size: 3rem;
+   padding: 2rem 4rem 0rem 4rem;
+}
+
+.rentaltable {
+   margin: 2rem auto;
+   padding: 1rem;
+   background-color: #2a9d8f;
+   color: white;
+   border-radius: 10px;
+}
+
+.rentaltable tr {
+   text-align: center;
+   font-weight: bold;
+}
+
+.rentaltable tr th {
+   padding: 1rem 2rem 1rem 2rem;
+}
+
+.cards section {
+   display: flex;
+   flex-direction: column;
+   padding: 0rem 0rem 4rem 0rem;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.cards {
+   display: flex;
+   flex-direction: column;
+   padding: 0rem 4rem 2rem 4rem;
+}
+
+.cards img {
+   width: 60%;
+   margin: 0 auto;
+}
+
+.cards p {
+   font-weight: bold;
+}
+
 /*****************************Reservation***************************/
 .resmain1 {
    padding: 2rem 4rem 0rem 4rem;

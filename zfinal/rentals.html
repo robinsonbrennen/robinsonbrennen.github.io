@@ -34,16 +34,68 @@
          </a>
       </div>
    </header>
-   <main>
+   <main class="clearfix rentalsmain">
       <div class="herodiv">
          <picture>
-            <source srcset="images/heroimage600.jpg" media="(max-width: 32.5em)">
-            <source srcset="images/heroimage800.jpg" media="(max-width: 60em)">
-            <source srcset="images/heroimage2000.jpg" media="(max-width: 120em)">
-            <img class="heroimage" src="images/heroimage2000.jpg" alt="Scooter on the road.">
+            <source srcset="images/redmoped600.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/redmoped800.jpg" media="(max-width: 60em)">
+            <source srcset="images/redmoped2000.jpg" media="(max-width: 120em)">
+            <img class="heroimage" src="images/redmoped2000.jpg" alt="Red Scooter.">
          </picture>
       </div>
-      <h1>Rentals</h1>
+      <table class="rentaltable">
+         <tr>
+            <th>Type</th>
+            <th>Reserve Half</th>
+            <th>Reserve Full</th>
+            <th>Walk-In Half</th>
+            <th>Walk-In Full</th>
+         </tr>
+         <tr>
+            <td>Honda Metropolitan</td>
+            <td>$20</td>
+            <td>$30</td>
+            <td>$25</td>
+            <td>$35</td>
+         </tr>
+         <tr>
+            <td>Honda Dio</td>
+            <td>$30</td>
+            <td>$40</td>
+            <td>$35</td>
+            <td>$45</td>
+         </tr>
+         <tr>
+            <td>Honda PCX150</td>
+            <td>$40</td>
+            <td>$50</td>
+            <td>$45</td>
+            <td>$55</td>
+         </tr>
+         <tr>
+            <td>Honda Pioneer 1000</td>
+            <td>$50</td>
+            <td>$70</td>
+            <td>$60</td>
+            <td>$80</td>
+         </tr>
+         <tr>
+            <td>Jeep Wrangler 4-door</td>
+            <td>$70</td>
+            <td>$100</td>
+            <td>$85</td>
+            <td>$125</td>
+         </tr>
+         <tr>
+            <td>Jeep Wrangler 2-door</td>
+            <td>$60</td>
+            <td>$85</td>
+            <td>$70</td>
+            <td>$90</td>
+         </tr>
+      </table>
+      <hr>
+      <h1 class="rentalstitle">Rentals</h1>
       <div class="cards"></div>
    </main>
    <footer>
@@ -61,4 +113,5 @@
       </div>
    </footer>
    <script type="text/javascript" src="js/scoots.js"></script>
+   <script type="text/javascript" src="js/jsoncall.js"></script>
 </body>
